@@ -1,7 +1,7 @@
 import os
 from config import *
 
-def get_file_content(working_directory, file_path):
+def get_files_content(working_directory, file_path):
     try:   
         working_dir_abs = os.path.abspath(working_directory)
         target_dir = os.path.normpath(os.path.join(working_dir_abs, file_path))
